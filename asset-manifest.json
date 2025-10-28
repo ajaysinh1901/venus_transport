@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/venus_transport/static/css/main.c26505d0.css",
-    "main.js": "/venus_transport/static/js/main.e6ba225f.js",
+    "main.js": "/venus_transport/static/js/main.2229f08c.js",
     "static/css/166.022d6988.chunk.css": "/venus_transport/static/css/166.022d6988.chunk.css",
     "static/js/166.82631167.chunk.js": "/venus_transport/static/js/166.82631167.chunk.js",
     "static/css/882.ebe600cd.chunk.css": "/venus_transport/static/css/882.ebe600cd.chunk.css",
@@ -17,7 +17,7 @@
     "static/js/636.be20df48.chunk.js": "/venus_transport/static/js/636.be20df48.chunk.js",
     "index.html": "/venus_transport/index.html",
     "main.c26505d0.css.map": "/venus_transport/static/css/main.c26505d0.css.map",
-    "main.e6ba225f.js.map": "/venus_transport/static/js/main.e6ba225f.js.map",
+    "main.2229f08c.js.map": "/venus_transport/static/js/main.2229f08c.js.map",
     "166.022d6988.chunk.css.map": "/venus_transport/static/css/166.022d6988.chunk.css.map",
     "166.82631167.chunk.js.map": "/venus_transport/static/js/166.82631167.chunk.js.map",
     "882.ebe600cd.chunk.css.map": "/venus_transport/static/css/882.ebe600cd.chunk.css.map",
@@ -34,6 +34,6 @@
   },
   "entrypoints": [
     "static/css/main.c26505d0.css",
-    "static/js/main.e6ba225f.js"
+    "static/js/main.2229f08c.js"
   ]
 }
