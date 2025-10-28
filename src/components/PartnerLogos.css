@@ -1,0 +1,107 @@
+/* Partner Logos Styles */
+.partner-logos-section {
+  padding: 100px 0;
+  background: white;
+  overflow: hidden;
+}
+
+.logos-scroll-container {
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0;
+  background: linear-gradient(to right, white 0%, transparent 10%, transparent 90%, white 100%);
+}
+
+.logos-scroll {
+  display: flex;
+  gap: 40px;
+  animation: scroll 30s linear infinite;
+  width: fit-content;
+}
+
+.logos-scroll:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.logo-item {
+  flex-shrink: 0;
+  width: 180px;
+}
+
+.logo-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border: 2px solid transparent;
+}
+
+.logo-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(247, 148, 29, 0.2);
+  border-color: #f7941d;
+}
+
+.logo-card i {
+  font-size: 48px;
+  color: #f7941d;
+  transition: all 0.3s ease;
+}
+
+.logo-card:hover i {
+  transform: scale(1.2);
+}
+
+.partner-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e1e1e;
+  text-align: center;
+}
+
+/* Alternative static grid layout for mobile */
+@media (max-width: 768px) {
+  .logos-scroll {
+    animation: scroll 20s linear infinite;
+    gap: 20px;
+  }
+
+  .logo-item {
+    width: 140px;
+  }
+
+  .logo-card {
+    padding: 20px 15px;
+  }
+
+  .logo-card i {
+    font-size: 36px;
+  }
+
+  .partner-name {
+    font-size: 0.8rem;
+  }
+}
+
+/* For browsers that don't support animation */
+@media (prefers-reduced-motion: reduce) {
+  .logos-scroll {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

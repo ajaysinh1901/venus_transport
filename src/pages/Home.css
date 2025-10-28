@@ -1,0 +1,1103 @@
+/* ===============================================
+   VENUS TRANSPORT - LIGHT THEME HOME PAGE STYLES
+   =============================================== */
+
+/* SECTION 1: Hero Light Section */
+.hero-light-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 50%, #ffffff 100%);
+  overflow: hidden;
+}
+
+.hero-gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(247, 148, 29, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at bottom left, rgba(0, 123, 255, 0.03) 0%, transparent 50%);
+  z-index: 1;
+}
+
+.hero-content-light {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.badge-light-hero {
+  display: inline-block;
+  padding: 10px 25px;
+  background: rgba(247, 148, 29, 0.1);
+  border: 2px solid rgba(247, 148, 29, 0.2);
+  border-radius: 50px;
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #f7941d 0%, #ff6b35 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.quick-stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.quick-stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary);
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  display: block;
+  animation: floatAnimation 6s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.hero-truck-image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  filter: brightness(1.05);
+  display: block;
+  object-fit: cover;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 3;
+}
+
+.scroll-indicator span {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.scroll-arrow {
+  width: 30px;
+  height: 50px;
+  border: 2px solid var(--primary);
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.scroll-arrow::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background: var(--primary);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  animation: scrollDown 2s infinite;
+}
+
+@keyframes scrollDown {
+  0%, 100% {
+    top: 10px;
+    opacity: 1;
+  }
+  50% {
+    top: 25px;
+    opacity: 0.5;
+  }
+}
+
+/* SECTION 2: Quick Inquiry Form */
+.quick-inquiry-light {
+  background: linear-gradient(180deg, #f9f9f9 0%, #ffffff 100%);
+}
+
+.inquiry-card-light {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+}
+
+.badge-light-modern {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(247, 148, 29, 0.1);
+  border: 2px solid rgba(247, 148, 29, 0.2);
+  border-radius: 50px;
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.quote-form-wrapper {
+  background: #f9f9f9;
+  padding: 35px;
+  border-radius: 20px;
+  border: 2px solid #f0f0f0;
+}
+
+.form-control-modern,
+.form-select.form-control-modern {
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-size: 1rem;
+  background: white;
+  transition: all 0.3s ease;
+  height: auto;
+}
+
+.form-control-modern:focus,
+.form-select.form-control-modern:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(247, 148, 29, 0.15);
+  background: white;
+}
+
+.form-control-modern::placeholder {
+  color: #999;
+  font-size: 0.95rem;
+}
+
+.btn-primary-modern {
+  background: linear-gradient(135deg, #f7941d 0%, #ff6b35 100%);
+  border: none;
+  padding: 14px 30px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(247, 148, 29, 0.3);
+}
+
+.btn-primary-modern:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(247, 148, 29, 0.4);
+  background: linear-gradient(135deg, #ff6b35 0%, #f7941d 100%);
+}
+
+.inquiry-card-light .form-floating > label {
+  color: var(--text-secondary);
+}
+
+.inquiry-card-light .form-control,
+.inquiry-card-light .form-select {
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.inquiry-card-light .form-control:focus,
+.inquiry-card-light .form-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(247, 148, 29, 0.15);
+}
+
+/* SECTION 3: About Overview */
+.about-overview-light {
+  background: white;
+}
+
+.about-image-grid {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.about-image-grid .main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+  object-fit: cover;
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -20px;
+  right: 30px;
+  background: linear-gradient(135deg, #f7941d, #ff6b35);
+  padding: 25px 40px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(247, 148, 29, 0.4);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.experience-badge h3 {
+  font-size: 3rem;
+  margin: 0;
+  color: white !important;
+}
+
+.experience-badge p {
+  margin: 0;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.feature-item-light {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 15px;
+  border-left: 4px solid var(--primary);
+  transition: all 0.3s ease;
+}
+
+.feature-item-light:hover {
+  background: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transform: translateX(10px);
+}
+
+.feature-icon-light {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+/* SECTION 4: Services Grid */
+.services-grid-light {
+  background: linear-gradient(180deg, #f9f9f9 0%, #ffffff 100%);
+}
+
+.service-card-light {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card-light:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+  border-color: var(--primary);
+}
+
+.service-icon-light {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, rgba(247, 148, 29, 0.1), rgba(255, 107, 53, 0.1));
+  color: var(--primary);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+
+.service-card-light:hover .service-icon-light {
+  background: linear-gradient(135deg, #f7941d, #ff6b35);
+  color: white;
+  transform: scale(1.1) rotate(5deg);
+}
+
+.service-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.service-features-list li {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* SECTION 5: Why Choose Us */
+.why-choose-light {
+  background: white;
+}
+
+.feature-box-light {
+  padding: 30px 20px;
+  transition: all 0.3s ease;
+}
+
+.feature-icon-box-light {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, rgba(247, 148, 29, 0.1), rgba(255, 107, 53, 0.1));
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  transition: all 0.3s ease;
+  border: 3px solid rgba(247, 148, 29, 0.2);
+}
+
+.feature-box-light:hover .feature-icon-box-light {
+  background: linear-gradient(135deg, #f7941d, #ff6b35);
+  color: white;
+  transform: scale(1.15) rotate(10deg);
+  border-color: transparent;
+}
+
+/* SECTION 6: Statistics Parallax */
+.stats-parallax-light {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+.stats-overlay-light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8) !important;
+  z-index: 1;
+}
+
+.stat-item-light {
+  position: relative;
+  z-index: 2;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  padding: 50px 40px;
+  border-radius: 30px;
+  box-shadow: 0 0 100px rgba(255, 255, 255, 0.9),
+              0 30px 90px rgba(0, 0, 0, 0.6), 
+              0 15px 40px rgba(255, 255, 255, 0.5);
+  border: 4px solid #f7941d;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+}
+
+.stat-item-light::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  border-radius: 26px;
+  z-index: -1;
+}
+
+.stat-item-light:hover {
+  transform: translateY(-20px) scale(1.05);
+  box-shadow: 0 0 120px rgba(255, 255, 255, 1),
+              0 40px 100px rgba(247, 148, 29, 0.7),
+              0 20px 50px rgba(0, 0, 0, 0.7);
+  border-width: 5px;
+  background: #ffffff !important;
+}
+
+.stat-icon-light {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #f7941d, #ff6b35);
+  color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  box-shadow: 0 20px 50px rgba(247, 148, 29, 0.7),
+              0 0 30px rgba(247, 148, 29, 0.4);
+  margin: 0 auto;
+}
+
+.stat-item-light h2 {
+  color: #000000 !important;
+  font-size: 4.5rem;
+  margin: 25px 0 15px;
+  font-weight: 900;
+  text-shadow: none;
+  letter-spacing: -2px;
+}
+
+.stat-item-light p {
+  color: #333333 !important;
+  letter-spacing: 2px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* SECTION 7: Testimonials */
+.testimonials-light {
+  background: linear-gradient(180deg, #f9f9f9 0%, #ffffff 100%);
+}
+
+/* SECTION 8: Partners */
+.partners-light {
+  background: white;
+}
+
+/* SECTION 9: CTA Section */
+.cta-light .btn-light {
+  background: white !important;
+  color: var(--primary) !important;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.cta-light .btn-light:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.cta-light .btn-outline-light {
+  border: 3px solid white;
+  color: white;
+  font-weight: 700;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.cta-light .btn-outline-light:hover {
+  background: white;
+  color: var(--primary);
+  transform: translateY(-3px);
+}
+
+/* ===============================================
+   COMPREHENSIVE RESPONSIVE DESIGN
+   =============================================== */
+
+/* Desktop Large (≥1200px) - Default styles already set above */
+
+/* Laptop / Medium Desktop (992px - 1199px) */
+@media (max-width: 1199px) {
+  .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .hero-light-section h1 {
+    font-size: 2.8rem !important;
+  }
+  
+  .display-3, .display-4, .display-5 {
+    font-size: calc(1.5rem + 1.5vw) !important;
+  }
+  
+  .stat-item-light h2 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Tablet / iPad (768px - 991px) */
+@media (max-width: 991px) {
+  /* Global Container Fix */
+  .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  /* Remove horizontal overflow */
+  body {
+    overflow-x: hidden;
+  }
+  
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* Hero Section */
+  .hero-light-section {
+    min-height: auto;
+    padding: 80px 0 60px;
+  }
+  
+  .hero-light-section h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .hero-light-section .lead {
+    font-size: 1.1rem;
+  }
+  
+  .hero-buttons {
+    gap: 10px;
+  }
+  
+  .hero-buttons .btn {
+    padding: 12px 25px;
+    font-size: 0.95rem;
+  }
+  
+  .quick-stat-card {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .quick-stat-card h3 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-truck-image {
+    margin-top: 40px;
+  }
+  
+  /* Quote Form Section */
+  .inquiry-card-light {
+    padding: 35px 25px;
+    margin: 0 10px;
+  }
+  
+  .inquiry-card-light h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .quote-form-wrapper {
+    padding: 25px 20px;
+    margin-top: 25px;
+  }
+  
+  /* About Section */
+  .about-image-grid {
+    margin-bottom: 30px;
+  }
+  
+  .experience-badge {
+    position: static;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  /* Services Section */
+  .service-card-light {
+    margin-bottom: 25px;
+    padding: 35px 25px;
+  }
+  
+  /* Statistics Section */
+  .stat-item-light {
+    padding: 35px 25px !important;
+    margin-bottom: 20px;
+  }
+  
+  .stat-item-light h2 {
+    font-size: 3rem !important;
+  }
+  
+  .stat-icon-light {
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+  }
+  
+  /* Why Choose Section */
+  .feature-box-light {
+    padding: 30px 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Section Headers */
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .badge-light-modern {
+    font-size: 0.8rem;
+    padding: 6px 18px;
+  }
+}
+
+/* Mobile Large (577px - 767px) */
+@media (max-width: 767px) {
+  /* Global Fixes */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  
+  .row > * {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  /* Remove all horizontal scroll */
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  /* Hero Section */
+  .hero-light-section {
+    padding: 60px 0 40px;
+    min-height: auto;
+  }
+  
+  .hero-light-section h1 {
+    font-size: 2rem !important;
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+  
+  .hero-light-section .lead {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 1rem;
+  }
+  
+  .quick-stat-card {
+    padding: 18px 15px;
+    margin-bottom: 12px;
+  }
+  
+  .quick-stat-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  .quick-stat-card p {
+    font-size: 0.85rem;
+  }
+  
+  .scroll-indicator {
+    display: none;
+  }
+  
+  /* Quote Form */
+  .inquiry-card-light {
+    padding: 30px 20px;
+    margin: 0 5px;
+    border-radius: 20px;
+  }
+  
+  .inquiry-card-light h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+  
+  .inquiry-card-light p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .quote-form-wrapper {
+    padding: 20px 15px;
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+  
+  .form-control-modern,
+  .form-select.form-control-modern {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    border-radius: 10px;
+  }
+  
+  .btn-primary-modern {
+    padding: 14px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+  
+  /* About Section */
+  .about-overview-light {
+    padding: 40px 0;
+  }
+  
+  .about-image-grid {
+    margin-bottom: 30px;
+  }
+  
+  .experience-badge {
+    padding: 20px 30px;
+  }
+  
+  .experience-badge h3 {
+    font-size: 1.8rem;
+  }
+  
+  .feature-item-light {
+    padding: 20px 15px;
+    margin-bottom: 15px;
+  }
+  
+  .feature-icon-light {
+    font-size: 2rem;
+  }
+  
+  /* Services Section */
+  .service-card-light {
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+  
+  .service-card-light h4 {
+    font-size: 1.3rem;
+  }
+  
+  .service-icon-light {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+  
+  /* Statistics Section */
+  .stats-parallax-light {
+    padding: 40px 0 !important;
+    background-attachment: scroll !important;
+  }
+  
+  .stat-item-light {
+    padding: 30px 20px !important;
+    margin-bottom: 15px;
+    border-radius: 20px !important;
+  }
+  
+  .stat-item-light h2 {
+    font-size: 2.5rem !important;
+  }
+  
+  .stat-item-light p {
+    font-size: 0.85rem !important;
+    letter-spacing: 1px !important;
+  }
+  
+  .stat-icon-light {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+  
+  /* Why Choose Section */
+  .feature-box-light {
+    padding: 25px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-icon-box-light {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+  
+  /* Section Headers */
+  .section-header {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .section-header h2 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+  
+  .section-header p {
+    font-size: 0.95rem;
+  }
+  
+  .badge-light-modern {
+    font-size: 0.75rem;
+    padding: 6px 15px;
+  }
+  
+  /* CTA Section */
+  .cta-light h2 {
+    font-size: 1.8rem;
+  }
+  
+  .cta-light .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Mobile Small (≤576px) */
+@media (max-width: 576px) {
+  /* Ultra-tight spacing for small screens */
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
+  section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  .py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  
+  /* Hero Section */
+  .hero-light-section {
+    padding: 50px 0 30px;
+  }
+  
+  .hero-light-section h1 {
+    font-size: 1.75rem !important;
+    margin-bottom: 12px;
+  }
+  
+  .hero-light-section .lead {
+    font-size: 0.95rem;
+  }
+  
+  .badge-light-hero {
+    font-size: 0.75rem;
+    padding: 8px 18px;
+  }
+  
+  .quick-stat-card {
+    padding: 15px 12px;
+  }
+  
+  .quick-stat-card h3 {
+    font-size: 1.3rem;
+  }
+  
+  /* Quote Form */
+  .inquiry-card-light {
+    padding: 25px 15px;
+    border-radius: 15px;
+  }
+  
+  .inquiry-card-light h2 {
+    font-size: 1.3rem;
+  }
+  
+  .quote-form-wrapper {
+    padding: 18px 12px;
+  }
+  
+  /* Services */
+  .service-card-light {
+    padding: 25px 18px;
+  }
+  
+  .service-card-light h4 {
+    font-size: 1.15rem;
+  }
+  
+  .service-icon-light {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+  
+  /* Statistics */
+  .stat-item-light {
+    padding: 25px 18px !important;
+  }
+  
+  .stat-item-light h2 {
+    font-size: 2.2rem !important;
+  }
+  
+  .stat-icon-light {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+  
+  /* Section Headers */
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .section-header p {
+    font-size: 0.9rem;
+  }
+  
+  /* Buttons */
+  .btn {
+    font-size: 0.9rem;
+    padding: 12px 18px;
+  }
+  
+  /* Display headings */
+  .display-3 { font-size: 2rem !important; }
+  .display-4 { font-size: 1.8rem !important; }
+  .display-5 { font-size: 1.6rem !important; }
+  .display-6 { font-size: 1.4rem !important; }
+}
+
+/* iPhone SE and smaller (≤375px) */
+@media (max-width: 375px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .hero-light-section h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  .inquiry-card-light {
+    padding: 20px 12px;
+  }
+  
+  .quote-form-wrapper {
+    padding: 15px 10px;
+  }
+  
+  .stat-item-light {
+    padding: 20px 15px !important;
+  }
+  
+  .stat-item-light h2 {
+    font-size: 2rem !important;
+  }
+  
+  .service-card-light {
+    padding: 20px 15px;
+  }
+}
+
+/* Landscape Mode Fixes */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-light-section {
+    min-height: auto;
+    padding: 40px 0;
+  }
+  
+  .scroll-indicator {
+    display: none;
+  }
+}
+
+/* iPad Pro and Large Tablets (1024px - 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .container {
+    max-width: 95%;
+  }
+  
+  .hero-light-section h1 {
+    font-size: 3rem !important;
+  }
+  
+  .stat-item-light {
+    padding: 40px 30px !important;
+  }
+  
+  .stats-parallax-light {
+    background-attachment: scroll;
+  }
+  
+  .cta-light h2 {
+    font-size: 1.75rem !important;
+  }
+  
+  .cta-light .btn {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* Additional Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

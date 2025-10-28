@@ -1,0 +1,882 @@
+/* ===============================================
+   VENUS TRANSPORT - NETWORK PAGE LIGHT THEME
+   =============================================== */
+
+/* SECTION 1: Hero */
+.network-hero-light {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 50%, #ffffff 100%);
+  overflow: hidden;
+  padding: 100px 0 80px;
+}
+
+.network-hero-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(247, 148, 29, 0.06) 0%, transparent 60%),
+              radial-gradient(circle at bottom left, rgba(0, 123, 255, 0.04) 0%, transparent 60%);
+  z-index: 1;
+}
+
+.network-hero-light .container {
+  position: relative;
+  z-index: 2;
+}
+
+.network-map-wrapper {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.network-map-wrapper img {
+  border-radius: 25px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.network-pulse {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #f7941d;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: pulsate 2s ease-out infinite;
+}
+
+.pulse-1 {
+  top: 30%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.pulse-2 {
+  top: 50%;
+  right: 25%;
+  animation-delay: 0.7s;
+}
+
+.pulse-3 {
+  bottom: 30%;
+  left: 40%;
+  animation-delay: 1.4s;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+    box-shadow: 0 0 0 0 rgba(247, 148, 29, 0.7);
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+    box-shadow: 0 0 0 15px rgba(247, 148, 29, 0);
+  }
+}
+
+/* SECTION 2: Regional Coverage */
+.regional-coverage-light {
+  background: white;
+}
+
+.region-card-light {
+  background: white;
+  padding: 35px 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.region-card-light:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+  border-color: var(--primary-color);
+}
+
+.region-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.region-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.region-stat-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* SECTION 3: Hub Map */
+.hub-map-light {
+  background: #f9f9f9;
+}
+
+.map-container-light {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.map-stats-overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 800px;
+}
+
+.map-stat-box h3 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+/* SECTION 4: Major Hubs */
+.major-hubs-light {
+  background: white;
+}
+
+.hub-card-light {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.hub-card-light:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+  border-color: var(--primary-color);
+}
+
+.hub-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.hub-icon-box {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, rgba(247, 148, 29, 0.1), rgba(255, 107, 53, 0.1));
+  color: var(--primary-color);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.bg-primary-light {
+  background: rgba(247, 148, 29, 0.1) !important;
+  color: var(--primary-color) !important;
+  font-size: 0.75rem;
+  padding: 5px 12px;
+}
+
+.hub-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.hub-detail-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+/* SECTION 5: Partner Network */
+.partner-network-light {
+  background: #f9f9f9;
+}
+
+.network-feature-box {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.network-feature-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+  border-color: var(--primary-color);
+}
+
+.network-feature-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, rgba(247, 148, 29, 0.1), rgba(255, 107, 53, 0.1));
+  color: var(--primary-color);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border: 3px solid rgba(247, 148, 29, 0.2);
+}
+
+.partner-warehouse-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.partner-badge-light {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.partner-badge-light:hover {
+  transform: translateX(5px);
+  border-color: var(--primary-color);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* SECTION 6: Network Statistics Parallax */
+.network-stats-parallax {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.network-stats-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(247, 148, 29, 0.9), rgba(255, 107, 53, 0.9));
+  z-index: 1;
+}
+
+.network-stats-parallax .container {
+  position: relative;
+  z-index: 2;
+}
+
+.network-stat-box-light {
+  transition: all 0.3s ease;
+}
+
+.network-stat-box-light:hover {
+  transform: translateY(-10px);
+}
+
+.network-stat-icon-big {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.network-stat-box-light h2 {
+  font-size: 3.5rem;
+  margin: 10px 0;
+}
+
+/* SECTION 7: Coverage Benefits */
+.coverage-benefits-light {
+  background: white;
+}
+
+.benefit-card-light {
+  background: white;
+  padding: 35px 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.benefit-card-light:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+  border-color: var(--primary-color);
+}
+
+.benefit-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #f7941d, #ff6b35);
+  color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(247, 148, 29, 0.3);
+}
+
+/* SECTION 8: CTA */
+.network-cta-light {
+  position: relative;
+  overflow: hidden;
+}
+
+.network-cta-light .btn-light {
+  background: white !important;
+  color: var(--primary-color) !important;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.network-cta-light .btn-light:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.network-cta-light .btn-outline-light {
+  border: 3px solid white;
+  color: white;
+  font-weight: 700;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.network-cta-light .btn-outline-light:hover {
+  background: white;
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+/* ===============================================
+   RESPONSIVE DESIGN - COMPREHENSIVE SYSTEM
+   =============================================== */
+
+/* Desktop - Large Screens (≥1200px) - Default styles apply */
+
+/* Laptop (992px - 1199px) */
+@media (max-width: 1199px) {
+  .network-hero-light {
+    min-height: 65vh;
+    padding: 90px 0 70px;
+  }
+
+  .network-hero-light h1 {
+    font-size: 3rem !important;
+  }
+
+  .network-hero-light p {
+    font-size: 1.1rem;
+  }
+
+  .region-card-light,
+  .hub-card-light {
+    padding: 30px 25px;
+  }
+
+  .region-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+
+  .network-stat-box-light h2 {
+    font-size: 3rem;
+  }
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
+  .network-hero-light {
+    min-height: auto;
+    padding: 80px 0 60px;
+  }
+
+  .network-hero-light h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .network-hero-light p {
+    font-size: 1rem;
+  }
+
+  .network-map-wrapper {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .network-map-wrapper img {
+    border-radius: 20px;
+  }
+
+  .map-stats-overlay {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .region-card-light {
+    padding: 30px 25px;
+    margin-bottom: 20px;
+  }
+
+  .region-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+
+  .hub-card-light {
+    padding: 30px 25px;
+    margin-bottom: 20px;
+  }
+
+  .network-feature-box {
+    padding: 30px 25px;
+    margin-bottom: 20px;
+  }
+
+  .benefit-card-light {
+    padding: 30px 25px;
+    margin-bottom: 20px;
+  }
+
+  .network-stat-box-light {
+    padding: 40px 30px;
+  }
+
+  .network-stat-box-light h2 {
+    font-size: 2.5rem;
+  }
+
+  .partner-warehouse-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .network-pulse {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Mobile Large (577px - 767px) */
+@media (max-width: 767px) {
+  .network-hero-light {
+    padding: 70px 0 50px;
+  }
+
+  .network-hero-light h1 {
+    font-size: 2rem !important;
+    line-height: 1.3;
+  }
+
+  .network-hero-light p {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+  }
+
+  .network-map-wrapper img {
+    border-radius: 15px;
+  }
+
+  .network-pulse {
+    width: 15px;
+    height: 15px;
+  }
+
+  .regional-coverage-light,
+  .network-hubs-light,
+  .network-features-light,
+  .network-stats-parallax,
+  .partner-warehouses-light,
+  .network-benefits-light,
+  .network-cta-light {
+    padding: 60px 0;
+  }
+
+  .section-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 2rem !important;
+    line-height: 1.3;
+  }
+
+  .region-card-light {
+    padding: 25px 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+
+  .region-card-light h3 {
+    font-size: 1.35rem;
+  }
+
+  .region-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    font-size: 1.75rem;
+    border-radius: 12px;
+  }
+
+  .map-stat-box {
+    padding: 15px 18px;
+  }
+
+  .map-stat-box h3 {
+    font-size: 1.5rem;
+  }
+
+  .map-stat-box p {
+    font-size: 0.85rem;
+  }
+
+  .hub-card-light {
+    padding: 25px 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+
+  .hub-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .hub-badge {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .hub-name {
+    font-size: 1.35rem;
+  }
+
+  .network-feature-box {
+    padding: 25px 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+
+  .network-feature-box h4 {
+    font-size: 1.15rem;
+  }
+
+  .feature-icon-network {
+    width: 55px;
+    height: 55px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+  }
+
+  .network-stats-parallax {
+    background-attachment: scroll;
+    padding: 60px 0;
+  }
+
+  .network-stat-box-light {
+    padding: 35px 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+
+  .network-stat-icon-big {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+
+  .network-stat-box-light h2 {
+    font-size: 2rem;
+  }
+
+  .network-stat-box-light p {
+    font-size: 0.9rem;
+  }
+
+  .partner-warehouse-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .warehouse-logo-box {
+    height: 100px;
+  }
+
+  .benefit-card-light {
+    padding: 25px 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+
+  .benefit-number {
+    width: 45px;
+    height: 45px;
+    font-size: 1.15rem;
+  }
+
+  .benefit-card-light h4 {
+    font-size: 1.15rem;
+  }
+
+  .network-cta-light h2 {
+    font-size: 2rem !important;
+  }
+
+  .network-cta-light p {
+    font-size: 0.95rem;
+  }
+
+  .network-cta-light .btn {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 14px 30px;
+  }
+}
+
+/* Mobile Small (≤576px) */
+@media (max-width: 576px) {
+  .network-hero-light {
+    padding: 60px 0 40px;
+  }
+
+  .network-hero-light h1 {
+    font-size: 1.75rem !important;
+  }
+
+  .network-hero-light p {
+    font-size: 0.9rem;
+  }
+
+  .network-pulse {
+    width: 12px;
+    height: 12px;
+  }
+
+  .regional-coverage-light,
+  .network-hubs-light,
+  .network-features-light,
+  .network-stats-parallax,
+  .partner-warehouses-light,
+  .network-benefits-light,
+  .network-cta-light {
+    padding: 50px 0;
+  }
+
+  .section-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem !important;
+  }
+
+  .region-card-light {
+    padding: 22px 18px;
+  }
+
+  .region-card-light h3 {
+    font-size: 1.25rem;
+  }
+
+  .region-icon-wrapper {
+    width: 55px;
+    height: 55px;
+    font-size: 1.5rem;
+  }
+
+  .map-stat-box {
+    padding: 12px 15px;
+  }
+
+  .map-stat-box h3 {
+    font-size: 1.35rem;
+  }
+
+  .hub-card-light {
+    padding: 22px 18px;
+  }
+
+  .hub-name {
+    font-size: 1.25rem;
+  }
+
+  .network-feature-box {
+    padding: 22px 18px;
+  }
+
+  .network-feature-box h4 {
+    font-size: 1.1rem;
+  }
+
+  .feature-icon-network {
+    width: 50px;
+    height: 50px;
+    font-size: 1.35rem;
+  }
+
+  .network-stat-box-light {
+    padding: 30px 20px;
+  }
+
+  .network-stat-icon-big {
+    font-size: 2rem;
+  }
+
+  .network-stat-box-light h2 {
+    font-size: 1.75rem;
+  }
+
+  .warehouse-logo-box {
+    height: 90px;
+  }
+
+  .benefit-card-light {
+    padding: 22px 18px;
+  }
+
+  .benefit-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+
+  .benefit-card-light h4 {
+    font-size: 1.1rem;
+  }
+
+  .network-cta-light h2 {
+    font-size: 1.75rem !important;
+  }
+
+  .network-cta-light .btn {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+/* iPhone SE and Extra Small Devices (≤375px) */
+@media (max-width: 375px) {
+  .network-hero-light h1 {
+    font-size: 1.6rem !important;
+  }
+
+  .section-title {
+    font-size: 1.6rem !important;
+  }
+
+  .region-card-light h3,
+  .hub-name {
+    font-size: 1.15rem;
+  }
+
+  .region-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    font-size: 1.35rem;
+  }
+
+  .map-stat-box h3 {
+    font-size: 1.25rem;
+  }
+
+  .network-stat-box-light h2 {
+    font-size: 1.6rem;
+  }
+
+  .network-cta-light h2 {
+    font-size: 1.6rem !important;
+  }
+}
+
+/* Landscape Mobile Optimization */
+@media (max-height: 500px) and (orientation: landscape) {
+  .network-hero-light {
+    min-height: auto;
+    padding: 60px 0 40px;
+  }
+
+  .network-hero-light h1 {
+    font-size: 1.75rem !important;
+  }
+}
+
+/* iPad Pro and Large Tablets (1024px - 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .network-hero-light {
+    padding: 100px 0 80px;
+  }
+
+  .region-card-light,
+  .hub-card-light {
+    padding: 32px 28px;
+  }
+
+  .partner-warehouse-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}

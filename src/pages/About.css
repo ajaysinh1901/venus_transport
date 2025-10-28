@@ -1,0 +1,922 @@
+/* ===============================================
+   VENUS TRANSPORT - ABOUT PAGE LIGHT THEME
+   =============================================== */
+
+/* SECTION 1: Hero Light */
+.about-hero-light {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 50%, #ffffff 100%);
+  overflow: hidden;
+  padding: 100px 0 80px;
+}
+
+.about-hero-gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top left, rgba(247, 148, 29, 0.06) 0%, transparent 60%),
+              radial-gradient(circle at bottom right, rgba(0, 123, 255, 0.04) 0%, transparent 60%);
+  z-index: 1;
+}
+
+.about-hero-light .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-mini-stat {
+  text-align: center;
+  padding: 15px 10px;
+  background: rgba(247, 148, 29, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(247, 148, 29, 0.1);
+}
+
+.about-hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.about-hero-truck {
+  border-radius: 25px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* SECTION 2: Company Story */
+.company-story-light {
+  background: white;
+}
+
+.story-image-grid {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.main-story-image {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  display: block;
+  object-fit: cover;
+}
+
+.story-experience-badge {
+  position: absolute;
+  bottom: -25px;
+  right: 30px;
+  background: linear-gradient(135deg, #f7941d, #ff6b35);
+  padding: 30px 45px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(247, 148, 29, 0.4);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.story-experience-badge h3 {
+  font-size: 3.5rem;
+  margin: 0;
+  color: white;
+  font-weight: 800;
+}
+
+.story-experience-badge p {
+  margin: 0;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 600;
+}
+
+.story-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.story-feature-item-light {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 15px;
+  border-left: 4px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.story-feature-item-light:hover {
+  background: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transform: translateX(10px);
+}
+
+.story-feature-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, rgba(247, 148, 29, 0.1), rgba(255, 107, 53, 0.1));
+  color: var(--primary-color);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+/* SECTION 3: Mission & Vision */
+.mission-vision-light {
+  background: #f9f9f9;
+}
+
+.mission-card-light {
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.mission-card-light:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  border-color: var(--primary-color);
+}
+
+.mission-icon-wrapper {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #f7941d, #ff6b35);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 30px rgba(247, 148, 29, 0.3);
+}
+
+.mission-icon {
+  font-size: 2.5rem;
+}
+
+.mission-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mission-list li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* SECTION 4: Core Values */
+.core-values-light {
+  background: white;
+}
+
+.value-card-light {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.value-card-light:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+  border-color: var(--primary-color);
+}
+
+.value-icon-box {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, rgba(247, 148, 29, 0.1), rgba(255, 107, 53, 0.1));
+  color: var(--primary-color);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  border: 3px solid rgba(247, 148, 29, 0.2);
+}
+
+.value-card-light:hover .value-icon-box {
+  background: linear-gradient(135deg, #f7941d, #ff6b35);
+  color: white;
+  transform: scale(1.15) rotate(10deg);
+  border-color: transparent;
+}
+
+/* SECTION 5: Journey Timeline */
+.journey-timeline-light {
+  background: #f9f9f9;
+}
+
+.timeline-scroll-wrapper {
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+.timeline-track {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  min-width: max-content;
+}
+
+.timeline-item-light {
+  flex: 0 0 280px;
+  background: white;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.timeline-item-light:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+  border-color: var(--primary-color);
+}
+
+.timeline-year {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #f7941d, #ff6b35);
+  color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(247, 148, 29, 0.3);
+}
+
+.timeline-content h5 {
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+/* SECTION 6: Leadership Team */
+.leadership-light {
+  background: white;
+}
+
+.team-card-light {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.team-card-light:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+.team-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+  display: block;
+}
+
+.team-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.team-card-light:hover .team-image-wrapper img {
+  transform: scale(1.1);
+}
+
+.team-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  opacity: 0;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-card-light:hover .team-overlay {
+  opacity: 1;
+}
+
+.team-info {
+  padding: 25px 20px;
+  text-align: center;
+}
+
+/* SECTION 7: Achievement Statistics */
+.achievement-stats-light {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.achievement-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 1;
+}
+
+.achievement-stats-light .container {
+  position: relative;
+  z-index: 2;
+}
+
+.achievement-box-light {
+  background: white;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.achievement-box-light:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+  border-color: var(--primary-color);
+}
+
+.achievement-icon-light {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #f7941d, #ff6b35);
+  color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(247, 148, 29, 0.3);
+}
+
+.achievement-box-light h2 {
+  font-size: 3.5rem;
+  margin: 15px 0 10px;
+}
+
+/* SECTION 8: CTA Section */
+.about-cta-light {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-cta-light .btn-light {
+  background: white !important;
+  color: var(--primary-color) !important;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.about-cta-light .btn-light:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.about-cta-light .btn-outline-light {
+  border: 3px solid white;
+  color: white;
+  font-weight: 700;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.about-cta-light .btn-outline-light:hover {
+  background: white;
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+/* Badge Styles */
+.badge-modern-light {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 25px;
+  background: rgba(247, 148, 29, 0.1);
+  border: 2px solid rgba(247, 148, 29, 0.2);
+  border-radius: 50px;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* ===============================================
+   RESPONSIVE DESIGN - COMPREHENSIVE SYSTEM
+   =============================================== */
+
+/* Desktop - Large Screens (≥1200px) - Default styles apply */
+
+/* Laptop (992px - 1199px) */
+@media (max-width: 1199px) {
+  .about-hero-light {
+    min-height: 65vh;
+    padding: 90px 0 70px;
+  }
+
+  .about-hero-light h1 {
+    font-size: 3rem !important;
+  }
+
+  .about-hero-light p {
+    font-size: 1.1rem;
+  }
+
+  .story-experience-badge {
+    padding: 25px 35px;
+    bottom: -20px;
+    right: 20px;
+  }
+
+  .story-experience-badge h3 {
+    font-size: 3rem;
+  }
+
+  .achievement-box-light h2 {
+    font-size: 3rem;
+  }
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
+  .about-hero-light {
+    min-height: auto;
+    padding: 80px 0 60px;
+  }
+
+  .about-hero-light h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .about-hero-light p {
+    font-size: 1rem;
+  }
+
+  .hero-mini-stat {
+    padding: 12px 8px;
+    margin-bottom: 15px;
+  }
+
+  .hero-mini-stat h3 {
+    font-size: 1.75rem;
+  }
+
+  .story-experience-badge {
+    position: static;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px 30px;
+  }
+
+  .story-experience-badge h3 {
+    font-size: 2.5rem;
+  }
+
+  .mission-card-light,
+  .value-card-light {
+    padding: 35px 25px;
+    margin-bottom: 20px;
+  }
+
+  .mission-icon-box,
+  .value-icon-box {
+    width: 70px;
+    height: 70px;
+    font-size: 1.75rem;
+  }
+
+  .timeline-scroll-wrapper {
+    padding-left: 15px;
+  }
+
+  .timeline-item-light {
+    flex: 0 0 260px;
+  }
+
+  .team-image-wrapper {
+    height: 220px;
+  }
+
+  .team-member-name {
+    font-size: 1.25rem;
+  }
+
+  .achievement-box-light {
+    padding: 40px 30px;
+  }
+
+  .achievement-box-light h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-hero-truck {
+    margin-top: 30px;
+  }
+}
+
+/* Mobile Large (577px - 767px) */
+@media (max-width: 767px) {
+  .about-hero-light {
+    padding: 70px 0 50px;
+    min-height: auto;
+  }
+
+  .about-hero-light h1 {
+    font-size: 2rem !important;
+    line-height: 1.3;
+  }
+
+  .about-hero-light p {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+  }
+
+  .hero-mini-stat {
+    padding: 10px 8px;
+  }
+
+  .hero-mini-stat h3 {
+    font-size: 1.5rem;
+  }
+
+  .hero-mini-stat p {
+    font-size: 0.75rem;
+  }
+
+  .about-hero-truck {
+    margin-top: 25px;
+    border-radius: 15px;
+  }
+
+  .company-story-light,
+  .mission-values-light,
+  .team-section-light,
+  .achievement-stats-light,
+  .about-cta-light {
+    padding: 60px 0;
+  }
+
+  .section-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 2rem !important;
+    line-height: 1.3;
+  }
+
+  .story-experience-badge {
+    padding: 20px 25px;
+    border-radius: 15px;
+    margin-top: 15px;
+  }
+
+  .story-experience-badge h3 {
+    font-size: 2.5rem;
+  }
+
+  .story-experience-badge p {
+    font-size: 0.9rem;
+  }
+
+  .main-story-image {
+    border-radius: 15px;
+    margin-bottom: 30px;
+  }
+
+  .story-features-list {
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .story-feature-item-light {
+    font-size: 0.95rem;
+  }
+
+  .feature-icon-light {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    font-size: 1rem;
+  }
+
+  .mission-card-light,
+  .value-card-light {
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+
+  .mission-card-light h3,
+  .value-card-light h3 {
+    font-size: 1.25rem;
+  }
+
+  .mission-icon-box,
+  .value-icon-box {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+  }
+
+  .timeline-scroll-wrapper {
+    padding-left: 10px;
+  }
+
+  .timeline-item-light {
+    flex: 0 0 240px;
+    padding: 25px 20px;
+    border-radius: 15px;
+  }
+
+  .timeline-year {
+    font-size: 1.75rem;
+  }
+
+  .team-image-wrapper {
+    height: 200px;
+  }
+
+  .team-member-name {
+    font-size: 1.15rem;
+  }
+
+  .team-member-role {
+    font-size: 0.85rem;
+  }
+
+  .achievement-stats-light {
+    background-attachment: scroll;
+    padding: 60px 0;
+  }
+
+  .achievement-box-light {
+    padding: 35px 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+
+  .achievement-box-light h2 {
+    font-size: 2rem;
+  }
+
+  .achievement-box-light p {
+    font-size: 0.9rem;
+  }
+
+  .about-cta-light h2 {
+    font-size: 1.75rem !important;
+    line-height: 1.3;
+  }
+
+  .about-cta-light p {
+    font-size: 0.95rem;
+  }
+
+  .about-cta-light .btn {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 14px 30px;
+  }
+}
+
+/* Mobile Small (≤576px) */
+@media (max-width: 576px) {
+  .about-hero-light {
+    padding: 60px 0 40px;
+  }
+
+  .about-hero-light h1 {
+    font-size: 1.75rem !important;
+    line-height: 1.3;
+  }
+
+  .about-hero-light p {
+    font-size: 0.9rem;
+  }
+
+  .hero-mini-stat {
+    padding: 12px 10px;
+  }
+
+  .hero-mini-stat h3 {
+    font-size: 1.35rem;
+  }
+
+  .hero-mini-stat p {
+    font-size: 0.7rem;
+  }
+
+  .company-story-light,
+  .mission-values-light,
+  .team-section-light,
+  .achievement-stats-light,
+  .about-cta-light {
+    padding: 50px 0;
+  }
+
+  .section-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem !important;
+  }
+
+  .story-experience-badge {
+    padding: 18px 22px;
+  }
+
+  .story-experience-badge h3 {
+    font-size: 2rem;
+  }
+
+  .story-experience-badge p {
+    font-size: 0.85rem;
+  }
+
+  .mission-card-light,
+  .value-card-light {
+    padding: 25px 18px;
+  }
+
+  .mission-card-light h3,
+  .value-card-light h3 {
+    font-size: 1.15rem;
+  }
+
+  .mission-icon-box,
+  .value-icon-box {
+    width: 55px;
+    height: 55px;
+    font-size: 1.35rem;
+  }
+
+  .timeline-item-light {
+    flex: 0 0 220px;
+    padding: 20px 15px;
+  }
+
+  .timeline-year {
+    font-size: 1.5rem;
+  }
+
+  .timeline-title {
+    font-size: 1rem;
+  }
+
+  .timeline-description {
+    font-size: 0.85rem;
+  }
+
+  .team-image-wrapper {
+    height: 180px;
+  }
+
+  .achievement-box-light {
+    padding: 30px 20px;
+  }
+
+  .achievement-box-light h2 {
+    font-size: 1.75rem;
+  }
+
+  .about-cta-light h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .about-cta-light .btn {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+/* iPhone SE and Extra Small Devices (≤375px) */
+@media (max-width: 375px) {
+  .about-hero-light h1 {
+    font-size: 1.6rem !important;
+  }
+
+  .section-title {
+    font-size: 1.6rem !important;
+  }
+
+  .hero-mini-stat h3 {
+    font-size: 1.25rem;
+  }
+
+  .story-experience-badge h3 {
+    font-size: 1.75rem;
+  }
+
+  .mission-card-light h3,
+  .value-card-light h3 {
+    font-size: 1.1rem;
+  }
+
+  .timeline-item-light {
+    flex: 0 0 200px;
+  }
+
+  .achievement-box-light h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-cta-light h2 {
+    font-size: 1.4rem !important;
+  }
+}
+
+/* Landscape Mobile Optimization */
+@media (max-height: 500px) and (orientation: landscape) {
+  .about-hero-light {
+    min-height: auto;
+    padding: 60px 0 40px;
+  }
+
+  .about-hero-light h1 {
+    font-size: 1.75rem !important;
+  }
+
+  .hero-mini-stat {
+    padding: 8px 10px;
+  }
+}
+
+/* iPad Pro and Large Tablets (1024px - 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .about-hero-light {
+    padding: 100px 0 80px;
+  }
+
+  .story-experience-badge {
+    padding: 28px 38px;
+  }
+
+  .timeline-item-light {
+    flex: 0 0 280px;
+  }
+}

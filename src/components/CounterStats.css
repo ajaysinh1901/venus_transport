@@ -1,0 +1,60 @@
+/* Counter Stats Styles */
+.counter-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #f7941d;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+}
+
+.stats-container {
+  background: white;
+  padding: 80px 0;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(247, 148, 29, 0.2);
+}
+
+.stat-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #f7941d 0%, #ff6b35 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 35px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(247, 148, 29, 0.3);
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .counter-number {
+    font-size: 2rem;
+  }
+
+  .stat-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
+}
