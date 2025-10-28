@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/venus_transport/static/css/main.c26505d0.css",
+    "main.js": "/venus_transport/static/js/main.e6ba225f.js",
+    "static/css/166.022d6988.chunk.css": "/venus_transport/static/css/166.022d6988.chunk.css",
+    "static/js/166.82631167.chunk.js": "/venus_transport/static/js/166.82631167.chunk.js",
+    "static/css/882.ebe600cd.chunk.css": "/venus_transport/static/css/882.ebe600cd.chunk.css",
+    "static/js/882.f09ffdb7.chunk.js": "/venus_transport/static/js/882.f09ffdb7.chunk.js",
+    "static/css/372.e146c290.chunk.css": "/venus_transport/static/css/372.e146c290.chunk.css",
+    "static/js/372.455dff8a.chunk.js": "/venus_transport/static/js/372.455dff8a.chunk.js",
+    "static/css/77.89b6cc8f.chunk.css": "/venus_transport/static/css/77.89b6cc8f.chunk.css",
+    "static/js/77.d9bcbda1.chunk.js": "/venus_transport/static/js/77.d9bcbda1.chunk.js",
+    "static/css/4.7b244bf8.chunk.css": "/venus_transport/static/css/4.7b244bf8.chunk.css",
+    "static/js/4.9645edbe.chunk.js": "/venus_transport/static/js/4.9645edbe.chunk.js",
+    "static/css/788.0b2ca457.chunk.css": "/venus_transport/static/css/788.0b2ca457.chunk.css",
+    "static/js/788.f20a504a.chunk.js": "/venus_transport/static/js/788.f20a504a.chunk.js",
+    "static/js/636.be20df48.chunk.js": "/venus_transport/static/js/636.be20df48.chunk.js",
+    "index.html": "/venus_transport/index.html",
+    "main.c26505d0.css.map": "/venus_transport/static/css/main.c26505d0.css.map",
+    "main.e6ba225f.js.map": "/venus_transport/static/js/main.e6ba225f.js.map",
+    "166.022d6988.chunk.css.map": "/venus_transport/static/css/166.022d6988.chunk.css.map",
+    "166.82631167.chunk.js.map": "/venus_transport/static/js/166.82631167.chunk.js.map",
+    "882.ebe600cd.chunk.css.map": "/venus_transport/static/css/882.ebe600cd.chunk.css.map",
+    "882.f09ffdb7.chunk.js.map": "/venus_transport/static/js/882.f09ffdb7.chunk.js.map",
+    "372.e146c290.chunk.css.map": "/venus_transport/static/css/372.e146c290.chunk.css.map",
+    "372.455dff8a.chunk.js.map": "/venus_transport/static/js/372.455dff8a.chunk.js.map",
+    "77.89b6cc8f.chunk.css.map": "/venus_transport/static/css/77.89b6cc8f.chunk.css.map",
+    "77.d9bcbda1.chunk.js.map": "/venus_transport/static/js/77.d9bcbda1.chunk.js.map",
+    "4.7b244bf8.chunk.css.map": "/venus_transport/static/css/4.7b244bf8.chunk.css.map",
+    "4.9645edbe.chunk.js.map": "/venus_transport/static/js/4.9645edbe.chunk.js.map",
+    "788.0b2ca457.chunk.css.map": "/venus_transport/static/css/788.0b2ca457.chunk.css.map",
+    "788.f20a504a.chunk.js.map": "/venus_transport/static/js/788.f20a504a.chunk.js.map",
+    "636.be20df48.chunk.js.map": "/venus_transport/static/js/636.be20df48.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c26505d0.css",
+    "static/js/main.e6ba225f.js"
+  ]
+}
